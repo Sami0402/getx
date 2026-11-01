@@ -380,6 +380,10 @@ extension ExtensionSnackbar on GetInterface {
     return controller;
   }
 
+  /// Shows a snackbar with the given [title] and [message].
+  ///
+  /// When [borderColor] is set, an omitted or null [borderWidth] defaults to
+  /// 1.0. An explicitly supplied width, including zero, is preserved.
   SnackbarController snackbar(
     String title,
     String message, {

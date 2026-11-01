@@ -277,6 +277,15 @@ To close snackbars, dialogs, bottomsheets, or anything you would normally close 
 Get.back();
 ```
 
+To show a snackbar with a border, set `borderColor`. If `borderWidth` is omitted
+or null, the border defaults to `1.0`; an explicit width, including zero, is
+preserved:
+
+```dart
+Get.snackbar('Title', 'Message', borderColor: Colors.grey);
+Get.snackbar('Title', 'Message', borderColor: Colors.grey, borderWidth: 2.5);
+```
+
 To go to the next screen and no option to go back to the previous screen (for use in SplashScreens, login screens, etc.)
 
 ```dart
